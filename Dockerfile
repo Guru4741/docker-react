@@ -3,7 +3,7 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install
 COPY . .
-RUN npm run install
+RUN npm run ibuild
 
 FROM nginx
 EXPOSE 80
